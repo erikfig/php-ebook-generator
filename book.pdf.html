@@ -1,0 +1,101 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><style>
+	@page :first {
+	   margin: 0;
+	   padding: 0;
+	   border: none;
+	}
+	
+	.container-cover-0 {
+		background-color:#c0392b;
+		height: 100%;
+	}
+</style></head><body><div class="container container-cover container-cover-0" style="page-break-after: always;"><div>
+    <div style="padding-top:2cm; color: #fff; text-align: center">
+
+        <img src="logo.png" alt="WebDevBr"/>
+
+        </div>
+
+    <div style="position: absolute; bottom: 1cm; right: 1cm">by Erik Figueiredo</div>
+</div>
+</div><div class="container container-before container-before-0" style="page-break-after: always;"><h1>Sobre o autor</h1>
+
+<p>Meu nome é Erik Figueiredo, e eu quero dizer que isso é só um texto de introdução, ele nem vai ser numerado</p>
+</div><div class=\"container container-toc" style="page-break-after: always;"><script type="text/php">
+    $GLOBALS['chapters'] = array();
+    $GLOBALS['backside'] = $pdf->open_object();
+    $GLOBALS['toc_page'] = $pdf->get_page_number();
+</script>
+
+<h2>Indice</h2>
+
+<ul>
+<li>%%TOC0%%
+
+<ul>
+<li>%%TOC1%%</li>
+<li>%%TOC2%%</li>
+</ul></li>
+<li>%%TOC3%%
+
+<ul>
+<li>%%TOC4%%</li>
+</ul></li>
+</ul>
+
+<script type="text/php">
+    $pdf->close_object();
+</script>
+</div><div class="container container-chapter container-chapter-0" style="page-break-after: always;"><h1>Capítulo 1</h1><script type="text/php"> 
+				if ($pdf) { 
+				  $GLOBALS['chapters'][] = [
+				  	'n' => $pdf->get_page_number() - 1,
+				  	't' => "Capítulo 1"
+				  ];
+				}
+			</script>
+
+<h2>Título de nível 2</h2><script type="text/php"> 
+				if ($pdf) { 
+				  $GLOBALS['chapters'][] = [
+				  	'n' => $pdf->get_page_number() - 1,
+				  	't' => "Título de nível 2"
+				  ];
+				}
+			</script>
+
+<p>Trabalhamos com markdown aqui, se você não conhece saiba que é bem simples de trabalhar, alias, é feito pra ser simples mesmo.</p>
+
+<h2>Outro título</h2><script type="text/php"> 
+				if ($pdf) { 
+				  $GLOBALS['chapters'][] = [
+				  	'n' => $pdf->get_page_number() - 1,
+				  	't' => "Outro título"
+				  ];
+				}
+			</script>
+
+<p>O ebook vai reconhecer os títulos para montar o indice</p>
+</div><div class="container container-chapter container-chapter-1" style="page-break-after: always;"><h1>Capítulo 2</h1><script type="text/php"> 
+				if ($pdf) { 
+				  $GLOBALS['chapters'][] = [
+				  	'n' => $pdf->get_page_number() - 1,
+				  	't' => "Capítulo 2"
+				  ];
+				}
+			</script>
+
+<h2>Organização</h2><script type="text/php"> 
+				if ($pdf) { 
+				  $GLOBALS['chapters'][] = [
+				  	'n' => $pdf->get_page_number() - 1,
+				  	't' => "Organização"
+				  ];
+				}
+			</script>
+
+<p>Você não precisa se organizar em um arquivo por título de nivel 1, o indice será criado corretamente, mas aconselho que faça assim, cada novo arquivo inicia em uma página única.</p>
+</div><div class="container container-after container-after-0" style="page-break-after: always;"><h1>Encerramento</h1>
+
+<p>Este arquivo vai depois do livro e ele não entra para o indice, espero que tenha gostado!</p>
+</div></body></html>
