@@ -4,7 +4,7 @@ PHP Ebook Generator é um gerador de livros em PDF que aceita Markdown, atualmen
 
 ## Instalação
 
-Para instalar [baixe o zip]() ou integre ao seu sistema usando Composer:
+Para instalar [baixe o zip](https://github.com/erikfig/php-ebook-generator/releases) ou integre ao seu sistema usando Composer:
 
 	composer require webdevbr/php-ebook-generator dev-master
 
