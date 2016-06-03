@@ -95,3 +95,12 @@ Aqui neste repositório tem exatamente este exemplo pronto para executar, é so 
 	 * um arquivo html será gerado também.
 	 */
 	$generate->make('book.pdf', true);
+
+
+Não esqueçam de criar os arquivos dentro de um diretório example:
+
+## Para contribuir
+
+Crie uma issue ou veja o quem tem lá disponível para você fazer, comente que vai fazer ou tire suas dúvidas, fork o projeto e depois das correções feitas faça um pull request de volta.
+
+Simples assim
