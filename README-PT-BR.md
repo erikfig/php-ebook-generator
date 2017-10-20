@@ -1,19 +1,20 @@
 # PHP Ebook Generator
 
-PHP Ebook Generator is a PDF book generator which accepts Markdown, currently in development. I've already used it to generate budget proposal and books and it was very functional.
+PHP Ebook Generator é um gerador de livros em PDF que aceita Markdown, atualmente está em desenvolvimento, mas adianto que já usei para gerar propostas de orçamento e apostilas e está bem funcional.
 
-## Instalation
+## Instalação
 
-To install, [download the zip](https://github.com/erikfig/php-ebook-generator/releases) or use Composer:
+Para instalar [baixe o zip](https://github.com/erikfig/php-ebook-generator/releases) ou integre ao seu sistema usando Composer:
 
 	composer require webdevbr/php-ebook-generator dev-master
 
-## Use
-You create the ebook using an entity, configure Dompdf and inject it on the object responsible of generate the PDF, the `make` command finalizes the process.
+## Uso
 
-For example, create a file named example.php and configure as follows:
+Você cria o ebook usando uma entidade, em seguida configura o Dompdf e injeta ele no objeto responsável por gerar o PDF, o comando `make` finaliza o processo.
 
-In this repository has this example ready to execute, just clone (or download) and run `php example.php` in the root of the project.
+Exemplo, crie um arquivo chamado example.php e configure conforme a seguir, por fim rode no terminal (ou cmd).
+
+Aqui neste repositório tem exatamente este exemplo pronto para executar, é so clonar (ou baixar) e rodar `php example.php` na raiz do projeto.
 
 
 	<?php
@@ -95,11 +96,11 @@ In this repository has this example ready to execute, just clone (or download) a
 	 */
 	$generate->make('book.pdf', true);
 
-Don't forget to create the files inside the example directory:
 
+Não esqueçam de criar os arquivos dentro de um diretório example:
 
-## How to contribute
+## Para contribuir
 
-Create an issue, or see what's already created, comment whats you will do or take your doubts, fork the project and after you make the fixes, do a pull request.
+Crie uma issue ou veja o quem tem lá disponível para você fazer, comente que vai fazer ou tire suas dúvidas, fork o projeto e depois das correções feitas faça um pull request de volta.
 
-Simple like that.
+Simples assim
