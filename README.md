@@ -18,7 +18,7 @@ In this repository has this example ready to execute, just clone (or download) a
 
 	<?php
 
-	/** Gerador de livros em PDF */
+	/** PDF Book Generator */
 
 	require 'vendor/autoload.php';
 
@@ -29,10 +29,10 @@ In this repository has this example ready to execute, just clone (or download) a
 	 * de um arquivo local, mas qualquer string vai bem ali.
 	 */
 
-	//Eu uso esta entidade para construir a estrutura do meu livro
+	//I use this entity to build the book structure
 	$book = new WebDevBr\Ebook\BookEntity;
 
-	//adiciono a capa
+	//add book's cover
 	$book->addCover(file_get_contents('example/cover.md'));
 
 	/**
@@ -42,7 +42,7 @@ In this repository has this example ready to execute, just clone (or download) a
 	 */
 	$book->addBefore(file_get_contents('example/intro.md'));
 
-	//adiciono os capítulos do livro
+	//add book's chapters
 	$book->addChapter(file_get_contents('example/cap1.md'));
 	$book->addChapter(file_get_contents('example/cap2.md'));
 
